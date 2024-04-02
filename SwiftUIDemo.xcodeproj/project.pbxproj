@@ -11,6 +11,8 @@
 		701E11112BBBA74800F27C13 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701E11102BBBA74800F27C13 /* ContentView.swift */; };
 		701E11132BBBA74A00F27C13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 701E11122BBBA74A00F27C13 /* Assets.xcassets */; };
 		701E11162BBBA74A00F27C13 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 701E11152BBBA74A00F27C13 /* Preview Assets.xcassets */; };
+		701E111D2BBBF42100F27C13 /* IconText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701E111C2BBBF42100F27C13 /* IconText.swift */; };
+		701E11212BBBFCD800F27C13 /* MyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701E11202BBBFCD800F27C13 /* MyButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		701E11102BBBA74800F27C13 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		701E11122BBBA74A00F27C13 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		701E11152BBBA74A00F27C13 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		701E111C2BBBF42100F27C13 /* IconText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconText.swift; sourceTree = "<group>"; };
+		701E11202BBBFCD800F27C13 /* MyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +55,8 @@
 		701E110D2BBBA74800F27C13 /* SwiftUIDemo */ = {
 			isa = PBXGroup;
 			children = (
+				701E11202BBBFCD800F27C13 /* MyButton.swift */,
+				701E111C2BBBF42100F27C13 /* IconText.swift */,
 				701E110E2BBBA74800F27C13 /* SwiftUIDemoApp.swift */,
 				701E11102BBBA74800F27C13 /* ContentView.swift */,
 				701E11122BBBA74A00F27C13 /* Assets.xcassets */,
@@ -138,7 +144,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				701E11112BBBA74800F27C13 /* ContentView.swift in Sources */,
+				701E11212BBBFCD800F27C13 /* MyButton.swift in Sources */,
 				701E110F2BBBA74800F27C13 /* SwiftUIDemoApp.swift in Sources */,
+				701E111D2BBBF42100F27C13 /* IconText.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -14,20 +14,28 @@ struct ContentView: View {
     var body: some View {
         // Vertical Stack (Like column in Android)
         VStack {
-            // Horizontal Stack (Like row in Android)
-            HStack {
-                
-                Text("Welcome to my world!")
-                    .font(.headline) // Changing the font style into a pre-defined headline font.
-                    // When we use predefined stuff it is easy for us to do changes for whole application at once.
-                
-                // We are using a systemName to find a predefined icons of iOS
-                Image(systemName: "heart.fill")
-                    .foregroundColor(.blue) // Changing the foregrounf color of the text
-                    .imageScale(.large) // Changing the size of the image
-                    .foregroundStyle(.tint)
-                
-            }.padding(20) // Here we overiding the padding size to 20
+            
+            // We have extracted the HStack into a subview called IconText()
+            // We can pass the values we need to changes as arguments to this sub view
+            IconText(text: "Welcome to my World!", iconName: "heart")
+            
+            // First we need to add the image into Assests
+            Image("itzzjb")
+                // Give the ability to image to be resized
+                .resizable()
+                .frame(width: 200,height: 200) // Width should be set before Height
+            
+            
+            Spacer()
+            MyButton()
+            Spacer()
+            
+            Spacer() // The spacer will stretch out the getting the whole area it can get in the screen.
+            // ( Verticaly or Horizontally )
+            
+            // We have extracted the HStack into a subview called IconText()
+            // We can pass the values we need to changes as arguments to this sub view
+            IconText(text: "It's me Januda!", iconName: "hand.wave")
 
         }
         // Modifiers are added after the View with a . at the start.
@@ -36,7 +44,15 @@ struct ContentView: View {
     }
 }
 
-// Generating a preview of the ContentView() view.
+// Generating a preview of the ContentView() view. (light-mode)
 #Preview {
     ContentView()
 }
+
+// Generating a preview of the ContentView() view. (dark-mode)
+#Preview {
+    ContentView().preferredColorScheme(/*@START_MENU_TOKEN@*/.dark/*@END_MENU_TOKEN@*/)
+}
+
+
+
